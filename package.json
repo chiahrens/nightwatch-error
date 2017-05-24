@@ -1,0 +1,20 @@
+{
+  "name": "nightwatch-error",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch -c nightwatch.json",
+    "sauce": "nightwatch -c nightwatch.json -e sauce"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "https://github.com/chiahrens/nightwatch-error",
+  "devDependencies": {
+    "mocha": "^3.4.1"
+  },
+  "dependencies": {
+    "nightwatch": "^0.9.15",
+    "selenium-server": "^3.4.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "src_folders": [
+    "./test"
+  ],
+  "selenium": {
+    "start_process": true,
+    "server_path": "./node_modules/selenium-server/lib/runner/selenium-server-standalone-3.4.0.jar",
+    "host": "127.0.0.1",
+    "port": 4444
+  },
+
+  "test_settings": {
+    "default": {
+      "desiredCapabilities": {
+        "browserName": "safari"
+      }
+    },
+    "sauce": {
+      "selenium_host": "ondemand.saucelabs.com",
+      "selenium_port": 80,
+      "username": "${SAUCE_USERNAME}",
+      "access_key": "${SAUCE_ACCESS_KEY}",
+      "desiredCapabilities": {
+        "browserName": "safari",
+        "platform": "macOS 10.12",
+        "version": "10.0"
+      },
+      "selenium" : {
+        "start_process" : false
+      }
+    }
+  }
+}
